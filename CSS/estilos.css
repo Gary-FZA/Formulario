@@ -1,0 +1,9 @@
+div > div > div .mover{
+    left: 200px;
+}
+.fondo {
+    background-color: gray;
+}
+#boton1{
+    left: 470px;
+}

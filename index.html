@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Form</title>
+      <!-- Compiled and minified CSS -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="/CSS/estilos.css">
+    <link rel="stylesheet" href="/js/JS.js">
+</head>
+<body>
+
+    <div class="container">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item active" aria-current="page">OrderForm</li>
+            </ol>
+          </nav>
+    </div>
+</br>
+    <div class="container" class="fondo">
+        <h3>Order Form</h3> 
+        <p>Please review orders information below. Click Edit to change this record, click to delete the record, or click Cancel/Close to return back.</p>
+        <div class="row">
+            <div class="col s2">Record</div>
+            <div class="col s7"></div>
+            <div class="col s1">View:</div>
+            <div class="col s2">
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Review Orders
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item" href="#">------</a>
+                      <a class="dropdown-item" href="#">------</a>
+                      <a class="dropdown-item" href="#">------</a>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="row">
+            <div class="col s1"></div>
+            <div class="col s8">*- Indicates a required field</div>
+            <div class="col s1 " id="boton1"><input type="submit" value="Ok" ></div>
+            <div class="col s1" style="text-align: right;"><input type="submit" value="Delete"></div>
+            <div class="col s1"><input type="submit" value="Cancel"></div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col s2">Customer: </div>
+            <div class="col s2"><input type="email" name="miemail" id="miemail"></div>
+            <div class="col s3"></div>
+            <div class="col s2">Address: </div>
+            <div class="col s3"><input type="text"></div>
+        </div>
+        <div class="row">
+            <div class="col s2">Employee: </div>
+            <div class="col s2"><input type="email" name="miemail" id="miemail"></div>
+            <div class="col s3"></div>
+            <div class="col s2">City: </div>
+            <div class="col s3"><input type="text"></div>
+        </div>
+        <div class="row">
+            <div class="col s2">Order Date: </div>
+            <div class="col s2"><input type="date" name="fecha" id="fecha"></div>
+            <div class="col s3"></div>
+            <div class="col s2">Region: </div>
+            <div class="col s3"><input type="text"></div>
+        </div>
+        <div class="row">
+            <div class="col s2">Required Date: </div>
+            <div class="col s2"><input type="date" name="fecha" id="fecha"></div>
+            <div class="col s3"></div>
+            <div class="col s2">Postal Code: </div>
+            <div class="col s3"><input type="text"></div>
+        </div>
+        <div class="row">
+            <div class="col s2">Shipped Date: </div>
+            <div class="col s2"><input type="date" name="fecha" id="fecha"></div>
+            <div class="col s3"></div>
+            <div class="col s2">Ship Country: </div>
+            <div class="col s3"><input type="text"></div>
+        </div>
+    </div>
+    <div class="container">
+        <table class="table">
+            <thead>
+              <tr>
+                <th scope="col"><input type="search" name="busqueda" id="Quick Find"></th>
+                <th scope="col">NewOrderDetails</th>
+                <th scope="col"><div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Actions
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item" href="#">------</a>
+                      <a class="dropdown-item" href="#">------</a>
+                      <a class="dropdown-item" href="#">------</a>
+                    </div>
+                  </div></th>
+                <th scope="col">
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Report
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                          <a class="dropdown-item" href="#">------</a>
+                          <a class="dropdown-item" href="#">------</a>
+                          <a class="dropdown-item" href="#">------</a>
+                        </div>
+                      </div>    
+                </th>
+                
+              </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="col">ProductName</th>
+                    <th scope="col">UnitPrice</th>
+                    <th scope="col">Quantity</th>
+                    <th scope="col">Discount</th>
+                    <th scope="col">ProductCategoryName</th>
+                    <th scope="col">ProductSupplierCompanyName</th>
+                    <th scope="col">ExtendedPrice</th>
+                  </tr>
+              <tr>
+                <th scope="row">Grandma's Boysenberry Spread</th>
+                <td>$25.00</td>
+                <td>20</td>
+                <td>25.00%</td>
+                <td>Condiments</td>
+                <td>Grandama kelly's Homestead</td>
+                <td>$375.00</td>
+              </tr>
+              <tr>
+                <th scope="row">Tofu</th>
+                <td>$23.25</td>
+                <td>20</td>
+                <td>25.00%</td>
+                <td>Produce</td>
+                <td>Mayumi's</td>
+                <td>$348.75</td>
+              </tr>
+              <tr>
+                <th scope="row">Teatime Chocolate Biscuits</th>
+                <td>$9.20</td>
+                <td>10</td>
+                <td>25.00%</td>
+                <td>Confections</td>
+                <td>Specialty Biscuits, Ltd.</td>
+                <td>$69.00  </td>
+              </tr>
+              
+            </tbody>
+          </table>
+    </div>
+    <div>
+        <div class="row">
+            <div class="col s1"></div>
+            <div class="col s8">*- Indicates a required field</div>
+            <div class="col s1 " id="boton1"><input type="submit" value="Ok" ></div>
+            <div class="col s1" style="text-align: right;"><input type="submit" value="Delete"></div>
+            <div class="col s1"><input type="submit" value="Cancel"></div>
+        </div>
+    </div>
+
+
+
+        <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- Bootstrap-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
